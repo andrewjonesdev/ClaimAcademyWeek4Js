@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="test.css">
+        <link rel="icon" href="favicon.png" type="image/png">
+        <script src="test.js"></script>
+    </head>
+    <body>
+    <h1 id="big">Form</h1>
+    <form >
+        <p id="firstNameError" class="error"></p>
+        <p id="lastNameError" class="error"></p>
+        <p id="emailError" class="error"></p>
+        <p id="phoneError" class="error"></p>
+        <p id="confirm" class="error"></p>
+        <p id="contactError" class="error"></p>
+        <p id="passwordError" class="error"></p>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" value="First Name" id="myFirstName" onchange="firstNameFunc()">
+        <br/>
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" value="Last Name" id="myLastName" onchange="firstNameFunc()">
+        <label for="email">Last Name</label>
+        <input type="text" name="email" value="Email" id="myEmail" onchange="firstNameFunc()">
+        <label for="phone">Last Name</label>
+        <input type="text" name="phone" value="Phone" id="myPhone" onchange="firstNameFunc()">
+        <label for="password">Last Name</label>
+        <input type="password" name="password" value="" id="myPassword" onchange="firstNameFunc()">
+        <br/>
+        <label for="confirm">Confirm Accurate</label>
+        <input type="checkbox" name="confirm" id="confirm" class="confirm">
+              <input type="radio" value="email" name="contact" class="contact"> Phone
+        <input type="radio" value="phone" name="contact" class="contact"> Email
+        <br/>
+        <button type="submit" onclick="submit()">Submit</button>
+    </form>
+    </body>
+</html>
